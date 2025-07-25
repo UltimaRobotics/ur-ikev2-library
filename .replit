@@ -1,0 +1,38 @@
+modules = ["cpp"]
+
+[nix]
+channel = "stable-25_05"
+packages = ["cmake", "gcc", "pkg-config", "openssl", "automake", "autoconf", "libtool"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "OpenIKEv2 Build and Run"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "setup_and_build"
+
+[[workflows.workflow]]
+name = "OpenIKEv2 Build and Run"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "chmod +x setup.sh && ./setup.sh && cd build && ./OpenIKEv2Integration"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "setup_and_build"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "chmod +x setup.sh && ./setup.sh"

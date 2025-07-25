@@ -1,0 +1,23 @@
+/***************************************************************************
+*   Copyright (C) 2005 by                                                 *
+*   Pedro J. Fernandez Ruiz    pedroj@um.es                               *
+*   Alejandro Perez Mendez     alex@um.es                                 *
+*                                                                         *
+*   This software may be modified and distributed under the terms         *
+*   of the Apache license.  See the LICENSE file for details.             *
+***************************************************************************/
+#include "logimpl.h"
+
+#include "buseventikesa.h"
+#include "buseventchildsa.h"
+#include "buseventcore.h"
+#include "eventbus.h"
+#include "ikesa.h"
+#include "exception.h"
+
+namespace openikev2 {
+    LogImpl::~ LogImpl() {
+    }
+}
+
+
