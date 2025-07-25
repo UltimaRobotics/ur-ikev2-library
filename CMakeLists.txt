@@ -11,10 +11,11 @@ find_package(PkgConfig REQUIRED)
 # Add libopenikev2 as external project
 set(LIBOPENIKEV2_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/libopenikev2")
 set(LIBOPENIKEV2_INCLUDE "${LIBOPENIKEV2_ROOT}/src")
-set(LIBOPENIKEV2_LIB "${LIBOPENIKEV2_ROOT}/build/lib")
+set(LIBOPENIKEV2_LIB "${LIBOPENIKEV2_ROOT}/build")
 
 # Include directories
 include_directories(${LIBOPENIKEV2_INCLUDE})
+include_directories(${LIBOPENIKEV2_ROOT}/build)
 include_directories(src)
 
 # Source files
@@ -33,7 +34,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # Link libraries
 target_link_libraries(${PROJECT_NAME} 
     Threads::Threads
-    ${LIBOPENIKEV2_LIB}/libopenikev2.a
+    ${LIBOPENIKEV2_LIB}/liblibopenikev2.a
     ssl
     crypto
 )

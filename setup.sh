@@ -10,22 +10,16 @@ if [ ! -d "libopenikev2" ]; then
     git clone https://github.com/openikev2/libopenikev2.git
 fi
 
-# Build libopenikev2 manually since autotools has issues
-cd libopenikev2/src
+cd libopenikev2
 
-echo "Building libopenikev2 source files..."
+# Create build directory
+mkdir -p build
+cd build
 
-# Create object files from all cpp files
-g++ -c -fPIC -I. *.cpp -DHAVE_CONFIG_H -O2
-
-# Create static library
-ar rcs libopenikev2.a *.o
-
-# Create build directory and move library
-mkdir -p ../build/lib
-mkdir -p ../build/include
-mv libopenikev2.a ../build/lib/
-cp *.h ../build/include/
+# Configure and build libopenikev2 using CMake
+echo "Building libopenikev2..."
+cmake .. -DCMAKE_BUILD_TYPE=Release -DLIBOPENIKE_VERSION="0.7"
+make -j$(nproc)
 
 echo "libopenikev2 built successfully"
 
