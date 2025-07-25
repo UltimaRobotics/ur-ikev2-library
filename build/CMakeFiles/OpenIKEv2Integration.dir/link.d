@@ -7,7 +7,7 @@ OpenIKEv2Integration: \
   CMakeFiles/OpenIKEv2Integration.dir/src/session_manager.cpp.o \
   CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o \
   CMakeFiles/OpenIKEv2Integration.dir/src/config_manager.cpp.o \
-  /home/runner/workspace/libopenikev2/build/libopenikev2.a \
+  libopenikev2/libopenikev2.a \
   /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libssl.so \
   /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libcrypto.so \
   /nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libstdc++.so \
@@ -56,7 +56,7 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o:
 
 CMakeFiles/OpenIKEv2Integration.dir/src/config_manager.cpp.o:
 
-/home/runner/workspace/libopenikev2/build/libopenikev2.a:
+libopenikev2/libopenikev2.a:
 
 /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libssl.so:
 

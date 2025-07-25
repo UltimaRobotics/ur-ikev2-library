@@ -174,6 +174,19 @@ OpenIKEv2Integration/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/build
 .PHONY : OpenIKEv2Integration/fast
 
+#=============================================================================
+# Target rules for targets named libopenikev2
+
+# Build rule for target.
+libopenikev2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libopenikev2
+.PHONY : libopenikev2
+
+# fast build rule for target.
+libopenikev2/fast:
+	$(MAKE) $(MAKESILENT) -f libopenikev2/CMakeFiles/libopenikev2.dir/build.make libopenikev2/CMakeFiles/libopenikev2.dir/build
+.PHONY : libopenikev2/fast
+
 src/config_manager.o: src/config_manager.cpp.o
 .PHONY : src/config_manager.o
 
@@ -307,6 +320,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... OpenIKEv2Integration"
+	@echo "... libopenikev2"
 	@echo "... src/config_manager.o"
 	@echo "... src/config_manager.i"
 	@echo "... src/config_manager.s"

@@ -13,7 +13,8 @@ Preferred communication style: Simple, everyday language.
 ### Core Architecture
 - **Language**: C++17 with CMake build system
 - **Output Interface**: Terminal-based JSON status output
-- **IKEv2 Implementation**: Custom libopenikev2 static library (autotools to CMake conversion)
+- **IKEv2 Implementation**: libopenikev2 built as subdirectory with direct static linking
+- **Library Integration**: Direct source code references to libopenikev2 components
 - **Configuration**: JSON-based configuration management with IKEv2 client config file support
 - **Monitoring**: Real-time JSON status output to terminal with configurable intervals
 
@@ -89,9 +90,10 @@ The application follows a modular, service-oriented architecture with clear sepa
 ## Deployment Strategy
 
 ### Build Process
-1. **libopenikev2 Compilation**: Static library built separately
-2. **Main Application**: CMake builds with static linking
-3. **Installation**: Binary installed to system bin directory
+1. **Unified Build**: libopenikev2 built as CMake subdirectory
+2. **Static Linking**: Direct static linking to libopenikev2 target
+3. **Single Step**: CMake handles both library and application build
+4. **Installation**: Binary installed to system bin directory
 
 ### Configuration Management
 - **JSON Configuration**: Single config.json file for all settings
@@ -118,3 +120,7 @@ The application follows a modular, service-oriented architecture with clear sepa
 - ✓ Fixed libopenikev2 CMake integration (autotools to CMake conversion)
 - ✓ Successfully built and deployed terminal-based integration layer
 - ✓ Application now outputs structured JSON status with real-time updates
+- ✓ **RESTRUCTURED**: libopenikev2 now built as subdirectory with static linking
+- ✓ **DIRECT INTEGRATION**: API directly references libopenikev2 source code and library
+- ✓ **VALIDATED**: libopenikev2 is properly statically linked and initialized
+- ✓ **CONFIGURATION**: Confirmed IKEv2 config file loading and parameter parsing

@@ -1284,6 +1284,57 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
   /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stddef.h \
   /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/include/stdint.h
 
+OpenIKEv2Integration: /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libcrypto.so \
+  /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libssl.so \
+  /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbegin.o \
+  /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtend.o \
+  /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/libgcc.a \
+  /nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libgcc_s.so \
+  /nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libgcc_s.so.1 \
+  /nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libstdc++.so \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/crt1.o \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/crti.o \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/crtn.o \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/ld-linux-x86-64.so.2 \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libc.so \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libc.so.6 \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libc_nonshared.a \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libdl.so.2 \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libm.so \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libm.so.6 \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libmvec.so.1 \
+  /nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libpthread.so.0 \
+  CMakeFiles/OpenIKEv2Integration.dir/src/config_manager.cpp.o \
+  CMakeFiles/OpenIKEv2Integration.dir/src/integration_layer.cpp.o \
+  CMakeFiles/OpenIKEv2Integration.dir/src/main.cpp.o \
+  CMakeFiles/OpenIKEv2Integration.dir/src/session_manager.cpp.o \
+  CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o \
+  libopenikev2/libopenikev2.a
+
+
+libopenikev2/libopenikev2.a:
+
+CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o:
+
+CMakeFiles/OpenIKEv2Integration.dir/src/config_manager.cpp.o:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libpthread.so.0:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libmvec.so.1:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libm.so.6:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libc.so.6:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libc.so:
+
+/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libgcc_s.so:
+
+/nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/libgcc.a:
+
+/nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbegin.o:
+
+/nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libssl.so:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/sys/resource.h:
 
@@ -1296,6 +1347,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/tr1/poly_laguerre.tcc:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/tr1/legendre_function.tcc:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/ld-linux-x86-64.so.2:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/tr1/hypergeometric.tcc:
 
@@ -1322,6 +1375,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/mathcalls-narrow.h:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/mathcalls-helper-functions.h:
+
+/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libgcc_s.so.1:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/math-vector.h:
 
@@ -1353,9 +1408,13 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/signal_ext.h:
 
+/nix/store/bmi5znnqk4kg2grkrhk6py0irc8phf6l-gcc-14.2.1.20250322-lib/lib/libstdc++.so:
+
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/sigcontext.h:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/getopt_posix.h:
+
+/nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/lib/gcc/x86_64-unknown-linux-gnu/14.2.1/crtend.o:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/ostream_insert.h:
 
@@ -1371,7 +1430,11 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/locale_classes.h:
 
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libdl.so.2:
+
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/istream.tcc:
+
+/nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libcrypto.so:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/functional_hash.h:
 
@@ -1380,6 +1443,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/exception_defines.h:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libc_nonshared.a:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/erase_if.h:
 
@@ -1506,6 +1571,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/tr1/beta_function.tcc:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/shared_ptr_base.h:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/libm.so:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/backward/binders.h:
 
@@ -1667,6 +1734,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/stl_map.h:
 
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/crtn.o:
+
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/wctype-wchar.h:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/types/__fpos64_t.h:
@@ -1682,6 +1751,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/concept_check.h:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/map:
+
+CMakeFiles/OpenIKEv2Integration.dir/src/session_manager.cpp.o:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/basic_ios.h:
 
@@ -1717,6 +1788,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/exception.h:
 
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/crt1.o:
+
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/tr1/poly_hermite.tcc:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/stdio.h:
@@ -1740,6 +1813,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/libintl.h:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/parse_numbers.h:
+
+/nix/store/zdpby3l6azi78sl83cpad2qjpfj25aqx-glibc-2.40-66/lib/crti.o:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/unistd_ext.h:
 
@@ -1851,6 +1926,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/type_traits:
 
+CMakeFiles/OpenIKEv2Integration.dir/src/integration_layer.cpp.o:
+
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/stl_raw_storage_iter.h:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/bits/cxxabi_forced.h:
@@ -1866,6 +1943,8 @@ CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.o: /home/runner/worksp
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/x86_64-unknown-linux-gnu/bits/c++locale.h:
 
 /nix/store/6i862vz60awrlsila8vw18rg4d4l66iy-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/x86_64-unknown-linux-gnu/bits/ctype_base.h:
+
+CMakeFiles/OpenIKEv2Integration.dir/src/main.cpp.o:
 
 /nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/bits/getopt_core.h:
 

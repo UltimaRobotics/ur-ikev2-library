@@ -7,6 +7,15 @@
 #include "session_manager.hpp"
 #include "state_monitor.hpp"
 
+// Forward declarations for libopenikev2 components to avoid header issues
+namespace openikev2 {
+    class IkeSaController;
+    class IpsecController;
+    class CryptoController;
+    class EventBus;
+    class GeneralConfiguration;
+}
+
 namespace OpenIKEv2 {
 
 class IntegrationLayer {
@@ -29,7 +38,11 @@ private:
     std::unique_ptr<StateMonitor> state_monitor_;
     std::atomic<bool> running_;
 
+    // libopenikev2 integration status
+    bool libopenikev2_initialized_;
+
     void setupSignalHandlers();
+    bool initializeLibOpenIKEv2();
 };
 
 } // namespace OpenIKEv2

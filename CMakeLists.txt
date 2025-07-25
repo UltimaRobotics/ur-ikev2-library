@@ -7,15 +7,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find required packages
 find_package(Threads REQUIRED)
 find_package(PkgConfig REQUIRED)
+find_package(OpenSSL REQUIRED)
 
-# Add libopenikev2 as external project
-set(LIBOPENIKEV2_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/libopenikev2")
-set(LIBOPENIKEV2_INCLUDE "${LIBOPENIKEV2_ROOT}/src")
-set(LIBOPENIKEV2_LIB "${LIBOPENIKEV2_ROOT}/build")
+# Add libopenikev2 as subdirectory
+add_subdirectory(libopenikev2)
 
 # Include directories
-include_directories(${LIBOPENIKEV2_INCLUDE})
-include_directories(${LIBOPENIKEV2_ROOT}/build)
+include_directories(libopenikev2/src)
 include_directories(src)
 
 # Source files
@@ -30,12 +28,12 @@ set(SOURCES
 # Create executable
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-# Link libraries
+# Link libraries - directly link to libopenikev2 target
 target_link_libraries(${PROJECT_NAME} 
+    libopenikev2
     Threads::Threads
-    ${LIBOPENIKEV2_LIB}/libopenikev2.a
-    ssl
-    crypto
+    OpenSSL::SSL
+    OpenSSL::Crypto
 )
 
 # Compiler flags

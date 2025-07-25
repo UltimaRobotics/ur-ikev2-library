@@ -160,7 +160,9 @@ OpenIKEv2Integration: CMakeFiles/OpenIKEv2Integration.dir/src/state_monitor.cpp.
 OpenIKEv2Integration: CMakeFiles/OpenIKEv2Integration.dir/src/config_manager.cpp.o
 OpenIKEv2Integration: CMakeFiles/OpenIKEv2Integration.dir/build.make
 OpenIKEv2Integration: CMakeFiles/OpenIKEv2Integration.dir/compiler_depend.ts
-OpenIKEv2Integration: /home/runner/workspace/libopenikev2/build/libopenikev2.a
+OpenIKEv2Integration: libopenikev2/libopenikev2.a
+OpenIKEv2Integration: /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libssl.so
+OpenIKEv2Integration: /nix/store/5xmcl9wr18g6ym3dh3363hv8hp6jyxqd-openssl-3.4.1/lib/libcrypto.so
 OpenIKEv2Integration: CMakeFiles/OpenIKEv2Integration.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/runner/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable OpenIKEv2Integration"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenIKEv2Integration.dir/link.txt --verbose=$(VERBOSE)

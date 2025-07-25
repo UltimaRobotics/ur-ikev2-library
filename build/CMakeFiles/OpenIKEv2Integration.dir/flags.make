@@ -4,7 +4,7 @@
 # compile CXX with /nix/store/a0d7m3zn9p2dfa1h7ag9h2wzzr2w25sn-gcc-wrapper-14.2.1.20250322/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/runner/workspace/libopenikev2/src -I/home/runner/workspace/libopenikev2/build -I/home/runner/workspace/src
+CXX_INCLUDES = -I/home/runner/workspace/libopenikev2/src -I/home/runner/workspace/src -I/home/runner/workspace/build/libopenikev2 -isystem /nix/store/0225zs9jl9s2y3ai1arbg0h9z7z4bmfi-openssl-3.4.1-dev/include
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -O2 -DCPPHTTPLIB_OPENSSL_SUPPORT
 
