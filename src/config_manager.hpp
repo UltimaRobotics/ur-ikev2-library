@@ -26,10 +26,8 @@ public:
     bool load();
     bool save() const;
 
-    // Server configuration
-    std::string getServerHost() const { return server_host_; }
-    int getServerPort() const { return server_port_; }
-    int getServerThreads() const { return server_threads_; }
+    // IKEv2 config file
+    std::string getIKEv2ConfigFile() const { return ikev2_config_file_; }
 
     // IKEv2 configuration
     std::string getLocalId() const { return local_id_; }
@@ -57,10 +55,8 @@ public:
 private:
     std::string config_file_;
     
-    // Server settings
-    std::string server_host_;
-    int server_port_;
-    int server_threads_;
+    // IKEv2 config file path
+    std::string ikev2_config_file_;
     
     // IKEv2 settings
     std::string local_id_;
@@ -87,6 +83,7 @@ private:
     
     // Helper methods
     bool parseJsonFile(const std::string& content);
+    bool loadIKEv2Config();
     void setDefaults();
 };
 

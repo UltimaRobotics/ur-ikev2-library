@@ -25,7 +25,6 @@ set(SOURCES
     src/session_manager.cpp
     src/state_monitor.cpp
     src/config_manager.cpp
-    src/http_server.cpp
 )
 
 # Create executable
@@ -34,7 +33,7 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # Link libraries
 target_link_libraries(${PROJECT_NAME} 
     Threads::Threads
-    ${LIBOPENIKEV2_LIB}/liblibopenikev2.a
+    ${LIBOPENIKEV2_LIB}/libopenikev2.a
     ssl
     crypto
 )

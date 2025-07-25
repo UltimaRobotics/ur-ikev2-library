@@ -85,12 +85,12 @@ clean: CMakeFiles/OpenIKEv2Integration.dir/clean
 CMakeFiles/OpenIKEv2Integration.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/runner/workspace/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target OpenIKEv2Integration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/runner/workspace/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target OpenIKEv2Integration"
 .PHONY : CMakeFiles/OpenIKEv2Integration.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OpenIKEv2Integration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/workspace/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/workspace/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OpenIKEv2Integration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/workspace/build/CMakeFiles 0
 .PHONY : CMakeFiles/OpenIKEv2Integration.dir/rule
@@ -102,7 +102,7 @@ OpenIKEv2Integration: CMakeFiles/OpenIKEv2Integration.dir/rule
 # codegen rule for target.
 CMakeFiles/OpenIKEv2Integration.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/runner/workspace/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target OpenIKEv2Integration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/runner/workspace/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target OpenIKEv2Integration"
 .PHONY : CMakeFiles/OpenIKEv2Integration.dir/codegen
 
 # clean rule for target.

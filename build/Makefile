@@ -198,30 +198,6 @@ src/config_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/src/config_manager.cpp.s
 .PHONY : src/config_manager.cpp.s
 
-src/http_server.o: src/http_server.cpp.o
-.PHONY : src/http_server.o
-
-# target to build an object file
-src/http_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/src/http_server.cpp.o
-.PHONY : src/http_server.cpp.o
-
-src/http_server.i: src/http_server.cpp.i
-.PHONY : src/http_server.i
-
-# target to preprocess a source file
-src/http_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/src/http_server.cpp.i
-.PHONY : src/http_server.cpp.i
-
-src/http_server.s: src/http_server.cpp.s
-.PHONY : src/http_server.s
-
-# target to generate assembly for a file
-src/http_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenIKEv2Integration.dir/build.make CMakeFiles/OpenIKEv2Integration.dir/src/http_server.cpp.s
-.PHONY : src/http_server.cpp.s
-
 src/integration_layer.o: src/integration_layer.cpp.o
 .PHONY : src/integration_layer.o
 
@@ -334,9 +310,6 @@ help:
 	@echo "... src/config_manager.o"
 	@echo "... src/config_manager.i"
 	@echo "... src/config_manager.s"
-	@echo "... src/http_server.o"
-	@echo "... src/http_server.i"
-	@echo "... src/http_server.s"
 	@echo "... src/integration_layer.o"
 	@echo "... src/integration_layer.i"
 	@echo "... src/integration_layer.s"

@@ -53,8 +53,7 @@ int main(int argc, char* argv[]) {
             return 1;
         }
 
-        std::cout << "HTTP API server listening on " 
-                  << config.getServerHost() << ":" << config.getServerPort() << std::endl;
+        std::cout << "JSON status monitoring active" << std::endl;
         std::cout << "Press Ctrl+C to stop..." << std::endl;
 
         // Keep running until interrupted

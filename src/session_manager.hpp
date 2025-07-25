@@ -93,6 +93,9 @@ private:
     void handleIKEMessage(const std::string& session_id, const void* message, size_t length);
 };
 
+// Utility function to convert session state to string
+const char* sessionStateToString(SessionState state);
+
 } // namespace OpenIKEv2
 
 #endif // SESSION_MANAGER_HPP

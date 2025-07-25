@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a C++ application that provides an HTTP-based integration layer for OpenIKEv2 VPN functionality. It acts as a bridge between the low-level IKEv2 protocol implementation and higher-level applications or management interfaces. The system includes a web dashboard for monitoring VPN sessions and provides RESTful APIs for programmatic control.
+This project is a C++ application that provides a terminal-based integration layer for OpenIKEv2 VPN functionality. It acts as a bridge between the low-level IKEv2 protocol implementation and higher-level applications. The system outputs JSON status strings directly to the terminal for real-time monitoring of VPN sessions and system state, supporting loading of IKEv2 client configuration files through JSON configuration references.
 
 ## User Preferences
 
@@ -12,17 +12,17 @@ Preferred communication style: Simple, everyday language.
 
 ### Core Architecture
 - **Language**: C++17 with CMake build system
-- **Web Framework**: Built-in HTTP server using cpphttplib with OpenSSL support
-- **IKEv2 Implementation**: Custom libopenikev2 static library
-- **Configuration**: JSON-based configuration management
-- **Frontend**: Bootstrap-based web dashboard with real-time updates
+- **Output Interface**: Terminal-based JSON status output
+- **IKEv2 Implementation**: Custom libopenikev2 static library (autotools to CMake conversion)
+- **Configuration**: JSON-based configuration management with IKEv2 client config file support
+- **Monitoring**: Real-time JSON status output to terminal with configurable intervals
 
 ### Architectural Pattern
 The application follows a modular, service-oriented architecture with clear separation of concerns:
 - Integration layer for protocol abstraction
 - Session management for connection lifecycle
-- State monitoring with real-time updates
-- HTTP server for web interface and API endpoints
+- State monitoring with real-time JSON output
+- Terminal-based interface for system monitoring and control
 
 ## Key Components
 
@@ -47,17 +47,10 @@ The application follows a modular, service-oriented architecture with clear sepa
    - Runtime configuration updates
    - Manages IKEv2 proposals and authentication settings
 
-5. **HTTP Server** (`http_server.cpp`)
-   - RESTful API endpoints
-   - Serves web dashboard
-   - Handles real-time updates via polling/websockets
-
-### Frontend Components
-1. **Web Dashboard** (`index.html`)
-   - Bootstrap-based responsive interface
-   - Real-time session monitoring
-   - Visual status indicators with color coding
-   - FontAwesome icons for enhanced UX
+5. **Main Application** (`main.cpp`)
+   - Terminal-based JSON output interface
+   - Real-time status monitoring
+   - System initialization and lifecycle management
 
 ### External Library
 - **libopenikev2**: Core IKEv2 protocol implementation
@@ -67,14 +60,14 @@ The application follows a modular, service-oriented architecture with clear sepa
 
 ## Data Flow
 
-1. **Configuration Loading**: JSON config parsed at startup
+1. **Configuration Loading**: JSON config parsed at startup with IKEv2 client config file support
 2. **IKEv2 Initialization**: Integration layer initializes libopenikev2 with config parameters
-3. **HTTP Server Startup**: Web server starts serving dashboard and API endpoints
+3. **State Monitoring**: Real-time JSON output starts immediately
 4. **Session Management**: 
-   - API calls trigger session creation/termination
+   - Terminal interface displays current session states
    - Session manager coordinates with integration layer
-   - State monitor tracks connection status
-5. **Real-time Updates**: Dashboard polls server for status updates
+   - State monitor tracks connection status and outputs JSON
+5. **Real-time Updates**: Continuous JSON status output to terminal with timestamps
 
 ## External Dependencies
 
@@ -88,9 +81,10 @@ The application follows a modular, service-oriented architecture with clear sepa
 - **pkg-config**: Package configuration
 - **automake/autoconf/libtool**: For libopenikev2 compilation
 
-### Frontend Dependencies (CDN)
-- **Bootstrap 5.1.3**: UI framework
-- **FontAwesome 6.0.0**: Icon library
+### Terminal Output Format
+- **JSON Status**: Real-time structured status output
+- **ISO Timestamps**: Standardized time formatting
+- **Session Statistics**: Comprehensive state tracking
 
 ## Deployment Strategy
 
@@ -105,12 +99,22 @@ The application follows a modular, service-oriented architecture with clear sepa
 - **Security Settings**: PSK authentication, encryption algorithms
 
 ### Monitoring and Logging
-- **Configurable Logging**: File-based logging with level control
-- **Real-time Monitoring**: Web dashboard with live status updates
-- **Session History**: Configurable history retention for diagnostics
+- **JSON Output**: Real-time structured status output to terminal
+- **Session Tracking**: Live session state monitoring with statistics
+- **System Metrics**: Process ID, uptime, and version information
 
 ### Security Considerations
 - **Authentication**: Pre-shared key (PSK) based IKEv2 authentication
 - **Encryption**: AES-256 encryption with SHA-256 integrity
 - **Network Security**: Configurable local/remote endpoints
-- **HTTPS Support**: OpenSSL integration for secure web interface
+- **Config File Support**: Direct loading of IKEv2 client configuration files
+
+## Recent Changes
+
+### January 2025
+- ✓ Removed HTTP server components per user request
+- ✓ Implemented terminal-based JSON status output
+- ✓ Added support for loading IKEv2 client config files via JSON configuration
+- ✓ Fixed libopenikev2 CMake integration (autotools to CMake conversion)
+- ✓ Successfully built and deployed terminal-based integration layer
+- ✓ Application now outputs structured JSON status with real-time updates

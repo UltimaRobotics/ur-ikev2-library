@@ -20,6 +20,10 @@ args = "OpenIKEv2 Build and Run"
 task = "workflow.run"
 args = "setup_and_build"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "OpenIKEv2 Integration"
+
 [[workflows.workflow]]
 name = "OpenIKEv2 Build and Run"
 author = "agent"
@@ -36,3 +40,11 @@ author = "agent"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "chmod +x setup.sh && ./setup.sh"
+
+[[workflows.workflow]]
+name = "OpenIKEv2 Integration"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd build && ./OpenIKEv2Integration"

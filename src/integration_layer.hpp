@@ -6,7 +6,6 @@
 #include "config_manager.hpp"
 #include "session_manager.hpp"
 #include "state_monitor.hpp"
-#include "http_server.hpp"
 
 namespace OpenIKEv2 {
 
@@ -28,7 +27,6 @@ private:
     const ConfigManager& config_;
     std::unique_ptr<SessionManager> session_manager_;
     std::unique_ptr<StateMonitor> state_monitor_;
-    std::unique_ptr<HttpServer> http_server_;
     std::atomic<bool> running_;
 
     void setupSignalHandlers();

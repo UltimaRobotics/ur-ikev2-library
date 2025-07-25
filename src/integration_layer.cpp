@@ -29,12 +29,7 @@ bool IntegrationLayer::initialize() {
             return false;
         }
 
-        // Initialize HTTP server
-        http_server_ = std::make_unique<HttpServer>(config_, *this);
-        if (!http_server_->initialize()) {
-            std::cerr << "Failed to initialize HTTP server" << std::endl;
-            return false;
-        }
+        // HTTP server removed - using terminal output
 
         std::cout << "All components initialized successfully" << std::endl;
         return true;
@@ -57,11 +52,7 @@ bool IntegrationLayer::start() {
             return false;
         }
 
-        // Start HTTP server
-        if (!http_server_->start()) {
-            std::cerr << "Failed to start HTTP server" << std::endl;
-            return false;
-        }
+        // HTTP server removed - using terminal output
 
         running_.store(true);
         std::cout << "Integration layer started successfully" << std::endl;
@@ -82,9 +73,6 @@ void IntegrationLayer::stop() {
     running_.store(false);
 
     // Stop components in reverse order
-    if (http_server_) {
-        http_server_->stop();
-    }
 
     if (state_monitor_) {
         state_monitor_->stop();
@@ -98,8 +86,19 @@ void IntegrationLayer::stop() {
 }
 
 void IntegrationLayer::run() {
+    std::cout << "OpenIKEv2 Integration Layer running - outputting JSON status to terminal" << std::endl;
+    std::cout << "Press Ctrl+C to stop..." << std::endl;
+    
     while (running_.load()) {
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        // Output current state as JSON every few seconds
+        if (state_monitor_) {
+            std::string json_status = state_monitor_->getCurrentStateJson();
+            std::cout << "\n=== CURRENT STATE ===" << std::endl;
+            std::cout << json_status << std::endl;
+            std::cout << "=====================\n" << std::endl;
+        }
+        
+        std::this_thread::sleep_for(std::chrono::seconds(5));
     }
 }
 
